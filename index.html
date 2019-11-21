@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/jquery-3.4.1.js"></script>
+  <script src="js/scripts.js"></script>
+  <title></title>
+</head>
+<body>
+  <div class="container">
+    <h1>fill out the survey below:</h1>
+    <div id="test">
+      <form>
+        <select class="form-control" id="beverage">
+          <option>Coffee</option>
+          <option>Tea</option>
+          <option>Kombucha</option>
+          <option>Water</option>
+        </select>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="chocolate" checked>
+            Chocolate
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="vanilla">
+            Vanilla
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="flavor" value="cookiesandcream">
+            Cookies & Cream
+          </label><br>
+          <div class="form-group">
+            <label for="born">Favorite Day:</label>
+            <input id="favoriteday" class="form-control" type="date">
+          </div>
+          <button type="submit" class="btn btn-success">Show me my favorite things!</button>
+        </div>
+        <div class="form-group">
+          <label for="color">What is your favorite color?</label>
+          <input id="color" class="form-control" type="color">
+        </div>
+      </form>
+    </div>
+    <div id="result">
+      <h4>your favorite drink is <span class="beverage"></span>. Your favorite ice cream flavor is <span class="flavor"></span> your favorite day is <span class="favoriteday"></span> your favorite color is <span class="color"></span></h4>
+    </div>
+  </div>
+</body>
+</html>
